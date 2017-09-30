@@ -1,0 +1,56 @@
+<html>
+<head>
+<link rel="stylesheet" href="nav.css">
+
+<script language="javascript">
+/*Скрипт изменения названия вкладки на текущую дату*/
+Now = new Date();
+window.onload = function(){
+document.title=Now.getDate()+"-"+(Now.getMonth()+1)+"-"+Now.getFullYear();
+}
+</script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.js "></script>
+<script type="text/javascript"> 
+/*Скрипт для гиперссылки*/
+$(document).ready(function(){
+$("#href1").mouseover(function(){$("#href1").css("color","orange")});
+$("#href1").mouseout(function(){$("#href1").css("color","blue")});});
+</script> 
+</head>
+
+<body>
+<header>
+<marquee behavior="alternate">Резюме</marquee>
+</header>
+<main>
+<div id='menu1'>
+  <ul >
+   <li> <p class="p1"> Имя: </p> <p> Евгения </p></li>
+   <li> <p class="p1">Фамилия:</p> <p>Олефиренко</p></li>  
+   <li> <p class="p1"> <a id="href1" href="https://vk.com/id386940136">Ссылка на профиль вконтакте</a> </p></li>
+   
+   <hr>
+    <li>  <p class="p1"> Образование: </p></li>
+	<li>В 2017 году окончила Ростовский-на-Дону колледж информатизации и управления</li> 
+   <li><i>Квалификация:</i> Техник-программист</li>
+  <br>
+	<li><i>Место учебы:</i> ЮФУ ИКТИБ</li>
+   <li><i>Кафедра:</i> Безопасности информационных технологий</li>
+    <li><i>Курс:</i> 1</li>
+
+   
+	     <hr>
+	   <li> <p class="p1"> Уровень английского: </p> Elementary   </li>
+	      <hr>
+	   <li> <p class="p1"> Почему именно Front-end?</p> 
+	    <p id="fe"> 
+		Я хочу научиться создавать дизайн и интерфейс сайта, изменять его в соответствии с нужной аудиторией, стилизовать его для нормальной работы с настольного ПК, планшета или телефона. Интересуюсь обеспечением необходимого уровня пользовательского интерфейса и опыта взаимодействия.
+		</p>
+	   </li>
+  </ul>
+  </div>
+</main>
+<footer><h3>Контактный телефон:+79081904040</h3>
+<h4>E-mail:lavochka66@gmail.com</h4></footer>
+</body>
+</html>
